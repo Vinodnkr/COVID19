@@ -1,0 +1,15 @@
+.cont {
+  min-height: 100vh;
+  background-color: #161625;
+  color: white;
+  text-align: center;
+}
+
+.home__button {
+  background: #2563eb;
+  border-radius: 12px;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  font-family: Roboto;
+}
