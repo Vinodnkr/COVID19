@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import './index.css'
 
 const ListOfState = props => {
   const {stateList} = props
@@ -11,7 +12,6 @@ const ListOfState = props => {
     listOfDeceased,
     listOfPopulation,
   } = stateList
-
   const active =
     listOfConfirmed - listOfRecovered - listOfDeceased - listOfOther
 

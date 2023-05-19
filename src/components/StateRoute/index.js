@@ -3,10 +3,9 @@ import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import Header from '../Header'
 import StateCards from '../StateCards'
-//import TopDistricts from '../TopDistricts'
-//import Charts from '../Charts'
+import TopDistricts from '../TopDistricts'
+import Charts from '../Charts'
 import Footer from '../Footer'
-
 import './index.css'
 
 const statesList = [
@@ -308,13 +307,13 @@ class StateRoute extends Component {
                 className="stateRoute-top-district-list"
                 testid="topDistrictsUnorderedList"
               >
-                {/* {topDistricts.map(eachItem => (
+                {topDistricts.map(eachItem => (
                   <TopDistricts
                     topDistrictsNumber={eachItem.districtValue}
                     topDistrictsName={eachItem.districtNameList}
                     key={eachItem.districtNameList}
                   />
-                ))} */}
+                ))}
               </ul>
             </div>
           </div>
@@ -323,7 +322,7 @@ class StateRoute extends Component {
           className="stateRoute-chart-container"
           testid="lineChartsContainer"
         >
-          {/*  <Charts districtsChart={category} districtCode={stateCode} />*/}
+          <Charts districtsChart={category} districtCode={stateCode} />
         </div>
       </div>
     )
